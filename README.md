@@ -7,3 +7,10 @@ References:
 ## Quick Start
 
 1. `flask run`
+
+
+## Database
+
+References:
+- [The Flask Mega-Tutorial Part IV: Database](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-iv-database)
+
