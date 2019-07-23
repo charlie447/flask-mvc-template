@@ -6,54 +6,7 @@
 {% endblock %}
 {% block body %}
 <main class="container">
-    <div class="row" style="margin-top: 85px">
-        <h1>Flask application template</h1>
-    </div>
 
-    <div class="row my-3">
-        <div class="col-6">
-
-            <div class="upload-box single-upload" id="upload1">
-
-                <div id="fileTarget1" class="upload-drop col-12">
-                    <span class="icon-span"><i class="appkiticon icon-outline-upload"></i></span>
-                    <span class="drop-span">Drop files here</span>
-                    <span class="browse-span">
-                        or Browse files from computer
-                        <input type="file">
-                    </span>
-                </div>
-                <div class="upload-success col-12 hidden">
-                    <span class="icon-span-lg ft-wrapper"><i class="fileType"></i></span>
-                    <span class="fileSpan">
-                        <span class="fileName"></span>
-                        <span class="fileSize"></span>
-                    </span>
-                    <div class="progress hidden">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
-                            aria-valuemax="100">
-                        </div>
-                    </div>
-                    <span class="date hidden"></span>
-                    <span class="icon-wrapper">
-                        <i class="appkiticon icon-outline-circle-delete tooltip-link" data-placement="top"
-                            data-toggle="tooltip" data-original-title="Delete" data-container="body"></i>
-                    </span>
-                </div>
-                <div class="upload-error col-12 hidden">
-                    <span class="label label-danger">Error</span>
-                    <span class="message"></span>
-                    <span class="icon-wrapper">
-                        <i class="appkiticon icon-outline-refresh tooltip-link" data-placement="top"
-                            data-toggle="tooltip" data-original-title="Retry" data-container="body"></i>
-                        <i class="appkiticon icon-outline-circle-delete tooltip-link" data-placement="top"
-                            data-toggle="tooltip" data-original-title="Delete" data-container="body"></i>
-                    </span>
-                </div>
-            </div>
-
-        </div>
-    </div>
 
 </main>
 
@@ -62,8 +15,6 @@
 
 {% block js%}
 <script>
-$(document).ready(() => {
-    singleUpload(false, '#fileTarget1', '#upload1');
-});
+
 </script>
 {% endblock%}

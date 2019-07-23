@@ -1,14 +1,15 @@
 import json
 from datetime import datetime as dt
 from app import app
-from flask import request
+from flask import request, render_template
 from .models import db, Activities
 from sqlalchemy import desc
 
 
 @app.route("/")
+@app.route("/index")
 def get_index():
-    return json.dumps("This is the MR-Insights' backend.")
+    return render_template('index.html')
 
 
 @app.route('/api/activity/add', methods=['post'])
